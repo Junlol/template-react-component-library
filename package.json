@@ -55,6 +55,7 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
+    "@antv/g6": "^4.7.2",
     "@antv/graphin": "^2.7.9"
   }
 }
