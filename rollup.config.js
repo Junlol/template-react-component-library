@@ -23,8 +23,8 @@ export default [
       },
     ],
     plugins: [
-      peerDepsExternal(),
-      resolve({ resolveOnly: ["^(?!(@antv)$)"] }),
+      //peerDepsExternal(),
+      resolve(),//{ resolveOnly: ["^(?!(@antv)$)"] }
       commonjs(),//{ exclude: ["node_modules/@antv/**"] }
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(),
