@@ -3,44 +3,19 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var React = require('react');
+var styleInject = require('../node_modules/style-inject/dist/style-inject.es.js');
 var Graphin = require('@antv/graphin');
 var G6 = require('@antv/g6');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var styleInject__default = /*#__PURE__*/_interopDefaultLegacy(styleInject);
 var Graphin__default = /*#__PURE__*/_interopDefaultLegacy(Graphin);
 var G6__default = /*#__PURE__*/_interopDefaultLegacy(G6);
 
-function styleInject(css, ref) {
-  if ( ref === void 0 ) ref = {};
-  var insertAt = ref.insertAt;
-
-  if (!css || typeof document === 'undefined') { return; }
-
-  var head = document.head || document.getElementsByTagName('head')[0];
-  var style = document.createElement('style');
-  style.type = 'text/css';
-
-  if (insertAt === 'top') {
-    if (head.firstChild) {
-      head.insertBefore(style, head.firstChild);
-    } else {
-      head.appendChild(style);
-    }
-  } else {
-    head.appendChild(style);
-  }
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
 var css_248z = "button {\n  font-size: 60px;\n}";
-styleInject(css_248z);
+styleInject__default["default"](css_248z);
 
 var Button = function (props) {
     return React__default["default"].createElement("button", null, props.label);

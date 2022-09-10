@@ -54,9 +54,8 @@
   ],
   "types": "dist/index.d.ts",
   "peerDependencies": {
+    "@antv/graphin": "^2.7.9",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@antv/g6": "^4.7.2",
-    "@antv/graphin": "^2.7.9"
+    "react-dom": "^18.2.0"
   }
 }
