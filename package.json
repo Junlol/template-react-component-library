@@ -14,6 +14,7 @@
   "author": "YOUR_NAME",
   "license": "ISC",
   "devDependencies": {
+    "@antv/graphin": "^2.7.9",
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
@@ -54,7 +55,6 @@
   ],
   "types": "dist/index.d.ts",
   "peerDependencies": {
-    "@antv/graphin": "^2.7.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
