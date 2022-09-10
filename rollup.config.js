@@ -11,11 +11,11 @@ export default [
   {
     input: "src/index.ts",
     output: [
-      {
-        file: packageJson.main,
-        format: "cjs",
-        sourcemap: true,
-      },
+      // {
+      //   file: packageJson.main,
+      //   format: "cjs",
+      //   sourcemap: true,
+      // },
       {
         file: packageJson.module,
         format: "esm",
@@ -31,7 +31,7 @@ export default [
     ],
   },
   {
-    input: "dist/esm/types/index.d.ts",
+    input: "dist/esm/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
     external: [/\.(css|less|scss)$/],
